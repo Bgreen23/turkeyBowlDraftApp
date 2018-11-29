@@ -20,7 +20,7 @@ pusher_client = pusher.Pusher(
 # def get_data():
 #     return requests.get('http://localhost:1234/api/players').content
 
-@app.route('/')
+@app.route('/start')
 def start():
     # players = Draft.query.all()
     # return render_template('index.html', players=players)
@@ -94,7 +94,17 @@ def delete_record(id):
     return redirect("/backend", code=302)
 
 
+# Code for Heroku Logging
+class HerokuConfig(ProductionConfig):
+    @classmethod
+    def init_app(cls, app):
+        ProductionConfig.init_app(app)
 
+    import logging
+    from logging import StreamHandler
+    file_handler = StreamHandler()
+    file_handler.setLevel(logging.WARNING)
+    app.logger.addHandler(file_handler)
 
 
 # @app.route('/jedi/<string:name>', methods=['DELETE'])
