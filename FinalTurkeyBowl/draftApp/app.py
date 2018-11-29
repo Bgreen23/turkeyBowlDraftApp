@@ -94,7 +94,17 @@ def delete_record(id):
     return redirect("/backend", code=302)
 
 
+# Code for Heroku Logging
+class HerokuConfig(ProductionConfig):
+    @classmethod
+    def init_app(cls, app):
+        ProductionConfig.init_app(app)
 
+    import logging
+    from logging import StreamHandler
+    file_handler = StreamHandler()
+    file_handler.setLevel(logging.WARNING)
+    app.logger.addHandler(file_handler)
 
 
 # @app.route('/jedi/<string:name>', methods=['DELETE'])
