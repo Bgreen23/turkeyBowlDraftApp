@@ -1,0 +1,58 @@
+@import "compass/css3/transform";
+@import url(https://fonts.googleapis.com/css?family=Bangers);
+@import url(https://fonts.googleapis.com/css?family=Mr+Dafoe);
+@import url(https://fonts.googleapis.com/css?family=Candal);
+
+.wrap {
+  padding: 5em 0.5em;
+  margin: 0 auto;
+  width: 100%;
+  height: 100%;
+}
+
+h1 {
+  text-align: center;
+  font-weight: normal;
+  color: #c26c18;
+  font-size: 12vw;
+  font-family: 'Bangers', cursive;
+  text-shadow: 5px 5px 0 rgba(94, 90, 103, 0.7);
+  transform: skew(0, -6.7deg);
+}
+.background {
+  background-color: #322d28;
+  width: 100%;
+  height: 100%;
+}
+.enterButton {
+  background-color: #c26c18;
+  color: #322d28;
+  margin: 5% 0% 0% 25%;
+  width: 50%;
+}
+.orangeFont {
+  color: #c26c18;
+}
+.smallFont {
+  font-size: 5vw;
+}
+.mainContain {
+  padding-top: 5%;
+}
+.street {
+  position: relative;
+  font-family: 'Candal', sans-serif;
+  font-size: 8vw;
+  font-style: italic;
+  color: #c26c18;
+  text-shadow: -10px 10px 0px #322d28;
+  margin: 0;
+}
+.machine {
+  font-family: 'Mr Dafoe', cursive;
+  font-size: 8vw;
+  transform:rotate(-15deg);
+  color: #c26c18;
+  text-shadow: 1px 2px 0px #322d28;
+  padding: 10% 0% 0% 60%;
+}
