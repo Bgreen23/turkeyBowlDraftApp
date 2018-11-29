@@ -1,3 +1,7 @@
+This project is my 3rd semester software project. This will be a live draft table for a Turkeybowl Event.
+The realtime-table folder is the pusher tutorial https://pusher.com/tutorials/live-table-flask that I based this off of. 
+
+
 As an Admin User, I need to be able to add players and teams
 As an Admin User, I need to be able to add players to teams.
 As an Admin User, I need to be able to update/edit the tables of teams and players.
